@@ -18,7 +18,7 @@
 
 # sep = ""
 
-# print("Kunle", "Ada", "Shola", sep = ",")
+# print("Kunle", "Ada", "Shola", sep = ",", end = "")
 # print("Kunle", "Ada", "Shola", sep = "-")
 # print("Kunle", "Ada", "Shola", sep = " and ")
 
@@ -31,7 +31,17 @@
 # print(message1, message2, sep="\nPARAGRAPH ENDS \n\n", file=file)
 
 # CREATE SIMPLE CSV FILE AND WRITE TO
-csv_file = open("atha/message.csv", "w") # w- write r- read a-append  note that file to be written be print must be opened in write mode.
+# csv_file = open("atha/message.csv", "w") # w- write r- read a-append  note that file to be written be print must be opened in write mode.
 
-print(1,2,3,4,5,68,1, sep=",", file = csv_file )
-print(2,3,4,5,6,7,8,9, sep=",", file = csv_file )
+# print(1,2,3,4,5,68,1, sep="", file = csv_file )
+# print(2,3,4,5,6,7,8,9, sep="", file = csv_file )
+
+# print("1,2,3,4,5,68,1", file = csv_file)
+
+# import datetime
+
+# print(datetime.datetime.now())
+
+# log_file = open("atha/logs.csv", "a")
+
+# print(datetime.datetime.now(), "enter was pressed", sep=",", file=log_file)
