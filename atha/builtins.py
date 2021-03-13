@@ -25,3 +25,9 @@ file = open("atha/journal.txt", "r")
 
 data =  file.read()
 print(len(data))
+
+val = "32"
+casted_val= int(val) # type casting in this case from string to integer
+
+print(val * 2)
+print(casted_val * 2)
