@@ -1,0 +1,5 @@
+Dozens of Bitnami open source applications can be quickly and easily installed on top of your XAMPP server or deployed in the cloud — for a broad range of use cases from blogs to ecommerce, business automation to eLearning.
+
+By using a Bitnami package, you'll get the added benefits of optimizations for performance, the most up-to-date releases, and security patches as soon as they're available.
+
+Get started by selecting a Bitnami Module for XAMPP below.
