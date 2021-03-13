@@ -51,4 +51,3 @@ message2 = "Be strong and fight against injustice."
 
 print(message1, end="\nmessage2")
 
- 
