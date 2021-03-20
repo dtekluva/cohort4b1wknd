@@ -128,3 +128,17 @@
 
 # unravelled_object = list(mapped_object)
 # print(unravelled_object)
+
+words = ["salami", "tunde", "salau", "winston", "john"]
+
+def add_salutation(name):
+
+    name_plus_salutation = "Mrs " + name.title()
+    
+    return name_plus_salutation
+
+# saluted_name = add_salutation("ebere")
+
+# print(saluted_name)
+
+print(list(map(add_salutation, words)))
