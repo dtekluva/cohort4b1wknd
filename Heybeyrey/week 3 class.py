@@ -1,9 +1,8 @@
-print (1, end="\n")
-print (1)
+# print (1, end="\n")
+# print (1)
 info1 = "this is my class"
 inf02 = "why are you fine"
 print("info1","inf02", end="\n that's all")
-
 
 print("ade","me","you", sep = ",,")
 print("ade","me","you", sep = "/")
@@ -33,6 +32,13 @@ message2= "5,6,887,7uy8"
 file= open("excel.csv", "a")
 print(message1,message2,file=file)
 
+Story= "I see, I saw. \nI saw snake agwo. \nI carry knife nma. \nTo kill snake agwo. \nSnake make ee die \tonwu, \tonwu, \tonwu"
+file_story=open("story.txt","w")
+print(Story, file=file_story)
+
+Story= "I see, I saw. \nI saw snake agwo. \nI carry knife nma. \nTo kill snake agwo. \nSnake make ee die \tonwu, \tonwu, \tonwu.\nnma gi odikwa nko nawa."
+file_story=open("story.txt","a")
+print(Story, file=file_story)
 
 # print (1, end="\n")
 # print (1)
@@ -69,18 +75,18 @@ num= [778,657,7647,874]
 print(min(num))
 
 
-file = open("atha/journal.txt", "r")
-print(file)
-print(file.read())
+# file = open("atha/journal.txt", "r")
+# print(file)
+# print(file.read())
 
 val = "32"
 casted_val= int(val)
 print(val*2)
 print(casted_val*2)
 
-file = open("Hey-me/jojo.txt", "r")
-print(file)
-print(file.read())
+# file = open("jojo.txt", "r")
+# print(file)
+# print(file.read())
 
 file = open("message.txt", "r")
 print(file)
