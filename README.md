@@ -8,3 +8,5 @@
  - KEYWORDS LINK - https://www.programiz.com/python-programming/keywords-identifier#:~:text=Keywords%20are%20the%20reserved%20words,33%20keywords%20in%20Python%203.7.
  - REAL PYTHON DATATYPES INTRO - https://realpython.com/python-data-types/
  - REAL PYTHON HELLO WORLD https://realpython.com/interacting-with-python/
+
+ - WEEK 5 CONDITIONAL STATEMENTS MATERIAL - https://realpython.com/python-conditional-statements/
