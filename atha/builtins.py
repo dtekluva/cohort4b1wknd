@@ -128,3 +128,76 @@
 
 # unravelled_object = list(mapped_object)
 # print(unravelled_object)
+
+# words = ["salami", "tunde", "salau", "winston", "john"]
+
+# def add_salutation(name):
+
+#     name_plus_salutation = "Mrs " + name.title()
+    
+#     return name_plus_salutation
+
+# # saluted_name = add_salutation("ebere")
+
+# # print(saluted_name)
+
+# print(list(map(add_salutation, words)))
+
+
+# def add_number(name):
+#     return name + " -> " + str(len(name))
+
+# print(list(map(add_number, words)))
+
+# METHOD (STRING METHODS)
+
+# string = "I am a boy and my name is john"
+# string2 = "       Jonah   "
+# csv= "a,b,c,d,e,f"
+
+# lower_case_version = string.lower() # RETURNS LOWER CASE OF A STRING
+# print(lower_case_version)
+
+# upper_case_version = string.upper() # RETURNS LOWER CASE OF A STRING
+# print(upper_case_version)
+
+# print(string2)
+# print(string2.strip())
+
+# replaced_vers = string.replace("boy", "girl")
+# print(replaced_vers)
+
+# splitted_string = string.split(" ")
+# print(splitted_string)
+
+# splitted_csv = csv.split(",")
+# print(splitted_csv)
+
+# print(",".join(splitted_csv)) # joins a list of strings with a specified delimiter
+
+
+# # join CAN BE USED TO JOIN A REVERSED STRING BACK INTO ITS NATURAL FORM (ONE LINER)
+
+# print("".join(list(reversed("alade"))))
+
+# join CAN BE USED TO JOIN A REVERSED STRING BACK INTO ITS NATURAL FORM (BROKEN DOWN)
+
+# value_to_be_reversed = "alade"
+# reversed_value = list(reversed("alade"))
+
+# joined_value = "".join(reversed_value)
+# print(joined_value)
+
+# INPUT BUILTIN FUNCTION
+
+# age = 32
+# age = input("Please enter your age : ")
+# print("Your age is ", age)
+
+
+print("Welcome to my string splitter. HAHAHAHA!!!.\n")
+value_to_be_reversed = input("Please enter text to be reversed : ")
+reversed_value = list(reversed(value_to_be_reversed))
+
+joined_value = "".join(reversed_value)
+print(joined_value)
