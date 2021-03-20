@@ -195,9 +195,42 @@
 # print("Your age is ", age)
 
 
-print("Welcome to my string splitter. HAHAHAHA!!!.\n")
-value_to_be_reversed = input("Please enter text to be reversed : ")
-reversed_value = list(reversed(value_to_be_reversed))
+# print("Welcome to my string reverser. HAHAHAHA!!!.\n")
+# value_to_be_reversed = input("Please enter text to be reversed : ")
+# reversed_value = list(reversed(value_to_be_reversed))
 
-joined_value = "".join(reversed_value)
-print(joined_value)
+# joined_value = "".join(reversed_value)
+# print(joined_value)
+
+# print("Welcome to my string splitter. HAHAHAHA!!!.\n")
+# value_to_be_splited = input("Please enter text to be splitted : ")
+# splitted_value = value_to_be_splited.split("-")
+
+
+# print(",".join(splitted_value)) # joins a list of strings with a specified delimiter
+
+
+# print("Welcome to my string splitter. HAHAHAHA!!!.\n")
+# value_to_be_splited = input("Please enter text to be splitted : ")
+# splitted_value = value_to_be_splited.split("-")
+
+
+# print(splitted_value)
+# print(splitted_value[0])
+# print(splitted_value[1])
+
+# year_of_birth = int(splitted_value[0])
+# age = 2021 - year_of_birth
+# print("Hello you are", age, "years old.")
+
+
+# SIMPLE EXERCISES
+
+num1 = input("Please enter num-1 > ")
+num2 = input("Please enter num-2 > ")
+
+print(num1, num2)
+print(int(num1) + int(num2))
+print(int(num1) * int(num2))
+print(sum([int(num1),int(num2)]))
+input()
