@@ -25,7 +25,7 @@ FRIEND2_SWEETS = int(input("How many sweets from friend 2 : "))
 FRIEND3_SWEETS = int(input("How many sweets from friend 3 : "))
 
 total_sweets = FRIEND1_SWEETS + FRIEND2_SWEETS + FRIEND3_SWEETS
-share = total_sweets//3
-remainder = total_sweets%3
+share = total_sweets//3 # GET FLOOR DIVISION VALUE
+remainder = total_sweets%3 # GET REMAINDER OR MODULUS
 
 print(f"HELLO GUYS, EACH OF YOU SHOULD GET {share}SWEETS AND {remainder} SHOULD BE DISCARDED")
