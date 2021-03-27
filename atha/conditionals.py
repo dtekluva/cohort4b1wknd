@@ -75,3 +75,9 @@ if action == "B":
     remainder = total_sweets%3 # GET REMAINDER OR MODULUS
 
     print(f"HELLO GUYS, EACH OF YOU SHOULD GET {share}SWEETS AND {remainder} SHOULD BE DISCARDED")
+
+    if not action == "A" or not action == "B" :
+        print("INVALID SELECTION.")
+
+    # if action != "A" or  action != "B" :
+    #     print("INVALID SELECTION.")

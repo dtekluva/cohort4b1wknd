@@ -82,8 +82,8 @@
 # my_modul = 17 % 3
 # print(my_modul)
 
-my_modul = 17 // 3
-print(my_modul)
+# my_modul = 17 // 3
+# print(my_modul)
 
 # divisor = 3
 # my_modul = 17 / divisor

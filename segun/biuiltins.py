@@ -1,7 +1,7 @@
-# number = -20
+number = -20
 
-# print("Original- :", number)
-# print("Abs - ", abs(number))
+print("Original- :", number)
+print("Abs - ", abs(number))
 
 # numbers = [2,4,1,7,2,2,10]
 # print(min(numbers)) # 
@@ -198,13 +198,13 @@
 # print(age)
 
 
-num1 = input("please enter num-1 > ")
-num2 = input("please enter num-2 > ")
+# num1 = input("please enter num-1 > ")
+# num2 = input("please enter num-2 > ")
 
-print(num1, num2)
-print(num1 + num2)
+# print(num1, num2)
+# print(num1 + num2)
 
-print(int(num1), int(num2))
-print(int(num1) + int(num2))
+# print(int(num1), int(num2))
+# print(int(num1) + int(num2))
 
-print(sum([int(num1), int(num2)]))
+# print(sum([int(num1), int(num2)]))
