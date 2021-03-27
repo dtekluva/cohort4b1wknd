@@ -123,3 +123,8 @@ if seconds < 30:
     print(f"You are in the first half of the minute. {seconds}seconds.")
 else:
     print(f"You are in the second half of the minute. {seconds}seconds.")
+
+
+
+
+    
