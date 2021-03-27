@@ -73,3 +73,12 @@ if seconds < 30:
 else:
     print(f"You are in the second half of the minute. {seconds}seconds.")
         
+
+
+print(f"HELLO GUYS, EACH OF YOU SHOULD GET {share}SWEETS AND {remainder} SHOULD BE DISCARDED")
+
+if not action == "A" or not action == "B" :
+    print("INVALID SELECTION.")
+
+# if action != "A" or  action != "B" :
+#     print("INVALID SELECTION.")
