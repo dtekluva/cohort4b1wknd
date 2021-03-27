@@ -59,5 +59,26 @@
 # print(int(num1) * int(num2))
 
 
-char_count = input("Type Charcter to be counted: ")
-print(len(char_count))
+# char_count = input("Type Charcter to be counted: ")
+# print(len(char_count))
+
+# Principal = input("Please insert The Principal: ")
+# Rate = input("Please input the rate: ")
+# time = input("Please input the time in years: ")
+
+# Interest = (int(Principal) * float(Rate) * int(time))/100
+# Total_Payable = int(Principal) + int(Interest)
+# print("The Interest for this transaction is", Interest)
+# print("The Total amount Payable would be", Total_Payable)
+
+Friend1 = input("How Many sweets did friend 1 bring: ")
+Friend2 = input("How many sweets did friend 2 bring: ")
+Friend3 = input("How many sweets did friend 3 bring: ")
+
+perperson = (int(Friend1) + int(Friend2) + int(Friend3))/3
+remainder = (int(Friend1) + int(Friend2) + int(Friend3)) % 3
+import math
+f,i = math.modf(perperson)
+print("Shared equally, each of you should get", int(perperson), "sweets and probably discard", remainder, "to avoid a fight")
+input("Please press enter when done")
+
