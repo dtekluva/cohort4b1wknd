@@ -145,100 +145,20 @@ import time
 #     print(a.pop())
 # print('Done.')
 
-def travel_back_in_time():
-    pass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-travel_back_in_time
+# def travel_back_in_time():
+#     pass
+
+text = "ali was a boy but he went to the room last time to spend alone time"
+
+replacements = [("ali", "Simbiat"),
+                ("he", "she"),
+                ("boy", "girl"),
+                ("room", "church"),
+                ("alone", "together")
+                ]
+
+while replacements:
+    replacement = replacements.pop()
+    text = text.replace(replacement[0], replacement[1])
+
+print(text)
