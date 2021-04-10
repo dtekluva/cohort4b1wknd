@@ -64,16 +64,181 @@ import time
 #     print("Ade never married")
 
 # FIND NUMBER WITHIN A RANGE THAT IS DIVISIBLE BY TWO OTHER NUMBERS
-number = 0
-max_number = 50
+# number = 0
+# max_number = 50
 
-while number < max_number:
+# while number < max_number:
     
-    if number != 0 and number % 3 == 0 and number % 5 == 0:
-        print(f"Found, our number is {number}")
-        break
+#     if number != 0 and number % 3 == 0 and number % 5 == 0:
+#         print(f"Found, our number is {number}")
+#         break
     
-    number += 1
+#     number += 1
     
-else:
-    print("Sorry number matches your description.")
+# else:
+#     print("Sorry number matches your description.")
+
+# COUNT UP IN 1SEC INTERVALS
+
+# import time
+
+# minutes = 0
+
+# while minutes < 60:
+
+#     print(f"{minutes}mins")
+#     minutes += 1
+#     time.sleep(1)
+
+import time
+
+# NESTED WHILE LOOP
+
+# minutes = 0
+# seconds = 0
+
+# while minutes < 60:
+    
+#     while seconds < 5:
+        
+#         count = f"{minutes}mins:{seconds}secs"
+#         print(count)
+#         seconds +=1
+#         time.sleep(1)
+    
+#     seconds = 0
+#     minutes += 1
+
+# NESTED WHILE LOOP COUNT DOWNWARD
+
+# minutes = 2
+# seconds = 0
+
+# while minutes > -1:
+    
+#     while seconds > 0:
+        
+#         count = f"{minutes}mins:{seconds}secs"
+#         print(count)
+#         seconds -=1
+#         time.sleep(1)
+    
+#     seconds = 60
+#     minutes -= 1
+
+# a = ['foo', 'bar', 'baz', 'qux', 'corge']
+# while a:
+
+#     condition = len(a) < 3
+
+#     if condition:
+#         break
+#     print(a.pop())
+
+# print('Done.')
+
+# a = ['foo', 'bar', 'baz', 'qux', 'corge']
+# while a:
+#     print("while top")
+#     if len(a) < 3:
+#         continue
+#     print(a.pop())
+# print('Done.')
+
+def travel_back_in_time():
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+travel_back_in_time
