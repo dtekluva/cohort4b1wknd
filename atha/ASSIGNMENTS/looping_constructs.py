@@ -39,6 +39,6 @@ while True: # RUN THIS FOREVER
     current_time = datetime.datetime.now()
     formated_time = current_time.strftime("%I:%M:%S-%p")
 
-    print(formated_time, end="\r")
+    print(formated_time, end=" \r")
     
     time.sleep(1)
