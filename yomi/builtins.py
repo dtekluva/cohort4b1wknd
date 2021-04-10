@@ -116,14 +116,51 @@
 # else:
 #     print("Sorry, one or more criterias not met")
 
+# import datetime
+# current_time = datetime.datetime.now()
+# # print(current_time)
+
+# seconds = current_time.second
+# print(seconds)
+
+# if seconds <= 30:
+#     print("First Half")
+# else: 
+#     print("Second Half")
+
+# sugesstion = input ("Type your word: ")
+# reversed_suggestion = (list(reversed(sugesstion)))
+# join_word = "".join(reversed_suggestion)
+# if  sugesstion == join_word:
+#     print(sugesstion, "is a palindrome")
+# else:
+#     print(sugesstion, "is not a palindrome")
+
+# a = ['Fizz', 'baz', 'buzz']
+# while a:
+#     print(a.pop(1))
+
+
+# b = 0
+# while b < 20:
+#     b += 1
+#     print(b)
+
+
+# c = [5, 10, 30, 40]
+# added = 0
+# while c:
+#     d = c.pop()
+#     added += d
+# print(added)
+
 import datetime
-current_time = datetime.datetime.now()
+import time
+
+while True:
+
+    current_time = datetime.datetime.now()
 # print(current_time)
 
-seconds = current_time.second
-print(seconds)
-
-if seconds <= 30:
-    print("First Half")
-else: 
-    print("Second Half")
+    print(current_time.hour, current_time.minute, current_time.second, sep = ":")
+    time.sleep(1)
