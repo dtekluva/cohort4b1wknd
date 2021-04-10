@@ -1,15 +1,15 @@
-num="300"
-print(num*4)
-converted_num=int(num)
-print(converted_num)
+# num="300"                         #or just define your num=int("300"), then run it. This also called casting.
+# print(num*4)
+# converted_num=int(num)
+# print(converted_num)
 
-num="300.565"
-print(num*4)
-converted_num=float(num)
-print(converted_num*6)
+# num="300.565"
+# print(num*4)
+# converted_num=float(num)
+# print(converted_num*6)
 
-my_number= range(10,20)
-print(my_number)
+my_number= range(10,20)              #just like data casting, just put range in front of the variable definition.
+print(my_number)                      #whenever you run anything and it gives you an object in the terminal, pls goan define in the print command the class of the object ie whether list, set or tuple.
 
 leapyears=range(1980,2020,5)
 print(list(leapyears))
@@ -20,20 +20,20 @@ print(tuple(leapyears))
 leapyears=range(1980,2020,5)  #this is called a generator
 print(set(leapyears))
 
-myname="ebere"
+myname="ebere"                       #or just like data casting, just define the variable as reversed("ebere"). And run it. 
 Reversing_my_name=reversed(myname)
 print(list(Reversing_my_name))
 
 pi=22/7
 print(pi)
 rounded=round(pi,3)
-print(rounded)
+print(rounded)                   #or you can just run it directly: print(round(pi,3))
 
 number=(7,76,90,3,0,2)
 print(sorted(number))
 print(sum(number))
 
-students=[["ade,90"],["sam,66"],["john,99"],["lisa,77"]]
+students=[["ade,90"],["sam,66"],["john,99"],["lisa,77"]]     #anyhow you put it with any bracket, it will sort it.
 print(sorted(students))     #it has sorted it by names. To sort by the figures, we'll get there later
 
 # students=dict(["ade,90"],["sam,66"],["john,99"],["lisa,77"]]
@@ -42,15 +42,20 @@ print(sorted(students))     #it has sorted it by names. To sort by the figures, 
 
 print(bool(1))
 print(bool(-1))
-print(bool( ))
+print(bool( ))         #This one is also empty
 print(bool(0))
 print(bool(["ade"]))
 print(bool(""))
 print(bool(" "))
 
 words=("salami","ade","tunde","ayo")
-lenght_of_words= map(len,words)
+lenght_of_words= map(len,words)       #n/b: mapping must have at least 2 arguments in front of it
 print(list(lenght_of_words))
+
+#or you can just simply do:       #mapping is used when you wanna apply the same function to every data set in a group and it is not working ordinarily, they you use mapping, if not still working, then you'll have to create a fucntion for it.
+print(map(len,words))              #n/b: mapping must have at least 2 arguments in front of it
+print(list(map(len,words)))
+
 
 words=("salami","ade","tunde","ayo")
 lenght_of_words= map(len,words)
@@ -125,13 +130,13 @@ print(string.upper())
 print(upper_case_version)
 
 string2= "      jonh    "
-print(string2.strip())
+print(string2.strip())          #this is to strip white spaces from both left and right
 
 replaced_version = string.replace("boy","girl")
 print(replaced_version)
 
 
-Splitted_string = string.split(" ")
+Splitted_string = string.split(" ")  
 print(Splitted_string)
 
 csv="a,b,c,d,e,f"
@@ -141,7 +146,7 @@ splitted_csv = csv.split(",")
 
 # # age =32
 # # print("your age is", age)
-# # age = input("please insert your age : ")
+# # age = input("please insert your age : ")     #ie you have defined your variable age as an input
 # # print("your age is ", age)
 
 # wordss= "welcome to my string splitter"

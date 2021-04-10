@@ -114,12 +114,57 @@ print('admin block')                   #python witll respond to all print comman
 #     print("your name is longer that 6")
 
 # DATETIME FUNCTION
-import datetime
+import datetime             #here we imported the definition of datetime as predefined from the systemd
 current_datetime = datetime.datetime.now()  #note, datetime is a fuction inside datetime.
 print(current_datetime)
 seconds= current_datetime.second
 print(seconds)
 
+# OR:
+import datetime
+current=datetime.datetime.now().month
+print(current)
 
 
+# # CLEANED UP VERSION
+# action = input("what operation?: \nA: (S-I) \nB:(CANDY) \n>>>>")
+# if action =="A":
+#     P= float(input("what is your principal?: "))
+#     R=float(input("what is your rate?: "))
+#     T=float(input("what is your time?: "))
+#     Simpleinterest= (P*R*T)/36000
+#     totalamount= Simpleinterest + P
+#     print("Simpleinterest = ", Simpleinterest)
+#     print("totalamount = ", totalamount)
+# if action =="B":
+#     friend1 = float(input("friend1 candy? : "))        
+#     friend2 = float(input("friend2 candy? : "))
+#     friend3 = float(input("friend3 candy? : "))
+#     shareeach = round((friend1 + friend2 + friend3)/3,1)
+#     Modulus_remainder= round(shareeach%3,1)
+#     print(Modulus_remainder)
+#     print(f"you guys should take {shareeach} sweets each, and throw the remaining {Modulus_remainder} away.")
+# else:
+#     print("invalid selection, try again")
+
+
+if "in" in ("wa are you in love"):
+    print("yea")
+
+#An unlimited number of elif clauses can be specified. The else clause is optional. If it is present, there can be ONLY ONE, AND IT MUST BE SPECIFIED LAST.
+
+if "foo" in ("wa are you in love"):
+    print("yea")
+elif "why" in ("wa are you in love"): print("ee"); print("e0iu"); print("ezwere")
+    #N/B: you can also write the elif command in a single line,but its gonna be a bit confusing coz python will print everything whether the first one is true or not.
+elif "you" in ("wa are you in love"):
+    print("dey")
+elif "love" in ("wa are you in love"):   #it will not run this correct one since the elif item above was correct
+    print("ydey")
+elif "wil" in ("wa are you in love"):
+    print("yey")
+elif "away" in ("wa are you in love"):
+    print("yy")
+else:
+    print("who art thou?")              #recall, else can ONLY BE ONE AND IT MUST BE SPECIFIED LAST
 

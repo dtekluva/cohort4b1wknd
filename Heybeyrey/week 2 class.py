@@ -1,3 +1,18 @@
+# x = 2
+# y = 2
+
+# print(x is y)
+
+# x = 2 
+# z = 4/2
+
+# print(x is y)
+# print(x is z)
+# print()
+# print("x-id - ", id(x))     #this is to get the unique identity/location of each of the variables to see which one are in the same location hence equal or not.
+# print("y-id - ", id(y))
+# print("z-id - ", id(z))
+
 # num_one = 5
 # print (num_one)
 
@@ -77,8 +92,14 @@ identity_two = 60
 check = identity_one is identity_two
 print (check)
 
+#THIS IS HOW TO CREATE A LOG OF ACTIVITIES
+#  import datetime
 
+# print(datetime.datetime.now())
 
+# log_file = open("atha/logs.csv", "a")
+
+# print(datetime.datetime.now(), "enter was pressed", sep=",", file=log_file)
 
 
 
