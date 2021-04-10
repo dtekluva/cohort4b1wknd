@@ -14,5 +14,6 @@
  - WEEK 6 TUTORIALS POINT ON DATETIME - https://www.programiz.com/python-programming/datetime/strftime
 
   REALPYTHON ON LOOPS
-    WHILE LOOPS - https://realpython.com/lessons/while-loops-and-lists/
+    WHILE LOOPS & LISTS - https://realpython.com/lessons/while-loops-and-lists/
     FOR   LOOPS - https://realpython.com/python-for-loop/
+    WHILE LOOPS - https://realpython.com/python-while-loop/
