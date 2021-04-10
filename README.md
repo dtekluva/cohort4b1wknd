@@ -10,3 +10,10 @@
  - REAL PYTHON HELLO WORLD https://realpython.com/interacting-with-python/
 
  - WEEK 5 CONDITIONAL STATEMENTS MATERIAL - https://realpython.com/python-conditional-statements/
+
+ - WEEK 6 TUTORIALS POINT ON DATETIME - https://www.programiz.com/python-programming/datetime/strftime
+
+  REALPYTHON ON LOOPS
+    WHILE LOOPS & LISTS - https://realpython.com/lessons/while-loops-and-lists/
+    FOR   LOOPS - https://realpython.com/python-for-loop/
+    WHILE LOOPS - https://realpython.com/python-while-loop/
