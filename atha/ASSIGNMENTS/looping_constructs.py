@@ -34,11 +34,46 @@ import time
     
 #     time.sleep(1)
 
-while True: # RUN THIS FOREVER
+# while True: # RUN THIS FOREVER
 
-    current_time = datetime.datetime.now()
-    formated_time = current_time.strftime("%I:%M:%S-%p")
+#     current_time = datetime.datetime.now()
+#     formated_time = current_time.strftime("%I:%M:%S-%p")
 
-    print(formated_time, end=" \r")
+#     print(formated_time, end=" \r")
     
-    time.sleep(1)
+#     time.sleep(1)
+
+
+# Break continue and else
+
+# ade = 5
+# is_ade_married_now = False
+
+# while ade < 20:
+
+#     print("Still a bachelor")
+#     ade += 1
+
+#     is_ade_married_now = input("is ade married now? : ")
+
+#     if is_ade_married_now == "True":
+#         print("Ade is now married.")
+#         break
+
+# else:
+#     print("Ade never married")
+
+# FIND NUMBER WITHIN A RANGE THAT IS DIVISIBLE BY TWO OTHER NUMBERS
+number = 0
+max_number = 50
+
+while number < max_number:
+    
+    if number != 0 and number % 3 == 0 and number % 5 == 0:
+        print(f"Found, our number is {number}")
+        break
+    
+    number += 1
+    
+else:
+    print("Sorry number matches your description.")
