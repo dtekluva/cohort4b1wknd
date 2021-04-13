@@ -19,9 +19,16 @@ word = "boy"
 # answer = "".join((reverse))
 # print((answer))
 
+word = "copy my work"
+reverse = "".join(reversed(word))      #.join is a string methonds but you still use it in the front
+reverse = "-".join(reversed(word))       #so .join is in the front and the delimited in front
+reverse = "/".join(reversed(word))
+reverse = " ".join(reversed(word))
+print(reverse)
+
 ans ="jan-drf-001/FNTC2003"
-solution = ans.split("/")
-print(solution)
+solution = ans.split("/")      #.split by the already set delimiter. 
+print(solution)                #while .split is at the back and the delimiter at the back as well.
 
 
 
