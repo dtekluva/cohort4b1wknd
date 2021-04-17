@@ -148,17 +148,97 @@ import time
 # def travel_back_in_time():
 #     pass
 
-text = "ali was a boy but he went to the room last time to spend alone time"
+# text = "ali was a boy but he went to the room last time to spend alone time"
 
-replacements = [("ali", "Simbiat"),
-                ("he", "she"),
-                ("boy", "girl"),
-                ("room", "church"),
-                ("alone", "together")
-                ]
+# replacements = [("ali", "Simbiat"),
+#                 ("he", "she"),
+#                 ("boy", "girl"),
+#                 ("room", "church"),
+#                 ("alone", "together")
+#                 ]
 
-while replacements:
-    replacement = replacements.pop()
-    text = text.replace(replacement[0], replacement[1])
+# while replacements:
+#     replacement = replacements.pop()
+#     text = text.replace(replacement[0], replacement[1])
 
-print(text)
+# print(text)
+
+
+
+# FOR LOOPS 
+
+
+# a = ['foo', 'bar', 'baz']
+# for i in a:
+#     print(i)
+
+# students = ["ali", "baba", "Bola","salam" ]
+
+# for student in students:
+#     print(student, end = ", ")
+
+# for i in 1304900:
+#     print(i)
+
+
+# print(iter("foobar"))
+# print(iter([1,2,3,4]))
+# print(iter({}))
+
+teams = ["liverpool", "acmilan", "arsenal", "juventus", "mancity"]
+# teams_iterator = iter(teams)
+# print(next(teams_iterator))
+# print(next(teams_iterator))
+# print(next(teams_iterator))
+# print(next(teams_iterator))
+# print(next(teams_iterator))
+
+# for team in reversed(teams):
+#     print(team)
+#     # input()
+
+# d = {'foo': 1, 'bar': 2, 'baz': 3}
+# for item in d.items():
+#     # print('k =', k, ', v =', v)
+#     print(item)
+# for key, value in d.items():
+#     # print('k =', k, ', v =', v)
+#     print(key, value)
+
+
+# for i in range(0, 10, 3):
+#     print(i)
+
+# GET MULTIPLES OF 5 AND 7 BETWEEN 1500 AND 2700 
+
+# for i in range(1500, 2701):
+#     if i % 5 == 0 and i % 7 == 0:
+#         print(i)
+
+# items_found = 0
+
+# for i in range(1500, 2701):
+#     if i % 5 == 0 and i % 7 == 0:
+#         print(i)
+#         items_found += 1 # keep track everytime an item that matches description is found.
+
+# print(items_found)
+
+
+# for i in range(1500, 2701):
+
+#     condition_is_true = i % 5 == 0 and i % 7 == 0
+
+#     if i % 5 == 0 and i % 7 == 0:
+#         print(i)
+#         items_found = 0
+#         items_found += 1 # keep track everytime an item that matches description is found.
+
+# print(items_found)
+
+for i in range(1,5):
+    print("* "*i)
+
+    if i == 4:
+        for i in range(5,0, -1):
+            print("* "*i)
