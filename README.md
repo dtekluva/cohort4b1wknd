@@ -17,3 +17,6 @@
     WHILE LOOPS & LISTS - https://realpython.com/lessons/while-loops-and-lists/
     FOR   LOOPS - https://realpython.com/python-for-loop/
     WHILE LOOPS - https://realpython.com/python-while-loop/
+
+
+W3RESOURCE SAMPLE EXCERCISES: https://www.w3resource.com/python-exercises/python-conditional-statements-and-loop-exercises.php
