@@ -139,6 +139,53 @@ print(word)                                #pls take not of the indentation of t
 
 
 
+n = 5
+# while n > 0:
+#     print(n)
+#     n -= 1
+#     if n == 2:
+#         break      #the break statement stops all iterations with the loop (both up and down) and goes to the next block (if any)
+
+
+# n = 5
+# while n > 0:
+#     n -= 1
+#     if n == 2:
+#         continue
+#         print(n)            #take note of the indentation here
+# print('Loop ended.')
+
+
+# n = 5
+# while n > 0:
+#     n -= 1
+#     if n == 2:
+#         continue
+#     print(n)                     #take note of the indentation here
+# print('Loop ended.')
+
+
+n = 5
+while n > 0:
+    n -= 1
+    if n == 2:
+        continue      #meaning, if n==2, dont print the 2, continue with the next iteration(ABOVE ONLY). iff when the loop is exhausted, then continue with other lines of code beneath
+    print(n)
+print('Loop ended.')
+
+
+# WE CAN HAVE MORE THAN ONE BREAK STATEMENT IN A LOOP IF YOU LIKE:
+# while True:
+#     if <expr1>:  # One condition for loop termination
+#         break
+#     ...
+#     if <expr2>:  # Another termination condition
+#         break
+#     ...
+#     if <expr3>:  # Yet another
+#         break
+
+
 
 
 

@@ -15,7 +15,7 @@ a = ["fizz", "baz", "buzz"]
 # print a while loop that can print 1 - 20
 
 # num= 0
-# while num<20:
+# while num<20:            #if or once this condition is false, the loop will never exceute
 #     num += 1
     # print(num)
 
@@ -195,3 +195,29 @@ while replacements:
     text = text.replace(replacement[0], replacement[1])
 
 print(text)
+
+
+# The PASS FUNCTION: 
+def vc_dey_mad():
+    pass          #this is just same as commenting the def function. but in the event of large def functions instead of highlighting and cntrl?, just type pass abeg
+
+
+#QUIZ CORRECTIONS:
+a = ['foo', 'bar', 'baz', 'qux', 'corge']
+# while a:
+
+#     condition = len(a) < 3
+
+#     if condition:
+#         break
+#     print(a.pop())
+
+# print('Done.')
+
+# a = ['foo', 'bar', 'baz', 'qux', 'corge']
+# while a:
+#     print("while top")
+#     if len(a) < 3:
+#         continue
+#     print(a.pop())
+# print('Done.')

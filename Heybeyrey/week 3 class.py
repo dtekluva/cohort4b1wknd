@@ -60,7 +60,7 @@ print(info1, info2, sep="\n")
 x=2
 z=4/2
 print(x==z)
-print(x is z)
+hprint(x is z)
 y=5
 numerator = (2*x)+(x**5)/((61**0.5)-18)
 denominaator = (20**6)/(4*y)+(x*y)
