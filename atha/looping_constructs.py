@@ -236,9 +236,50 @@ teams = ["liverpool", "acmilan", "arsenal", "juventus", "mancity"]
 
 # print(items_found)
 
-for i in range(1,5):
-    print("* "*i)
+# PRINT FORMATED ASTERIX USING NESTED FOR LOOP
 
-    if i == 4:
-        for i in range(5,0, -1):
-            print("* "*i)
+# for i in range(1,5):
+#     print("* "*i)
+
+#     if i == 4:
+#         for i in range(5,0, -1):
+#             print("* "*i)
+# Write a Python program to find numbers between 100 and 400 (both included) where each digit of a number is an even number
+# for i in range (100, 401):
+
+#     i_str = str(i)
+
+#     i1 = int(i_str[0])
+#     i2 = int(i_str[1])
+#     i3 = int(i_str[2])
+
+#     if i1 % 2 == 0 and i2 % 2 == 0 and i3 % 2 == 0:
+
+#         print(i1, i2, i3, sep = ",")
+
+# for i in range (100, 401):
+
+#     i_str = str(i)
+
+#     i1 = int(i_str[0])
+#     i2 = int(i_str[1])
+#     i3 = int(i_str[2])
+
+#     if i1 % 2 == 0 and i2 % 2 == 0 and i3 % 2 == 0:
+
+#         print(i, end = ", ")
+
+
+for i in range (100, 401):
+
+    i_str = str(i)
+
+    i1 = int(i_str[0])
+    i2 = int(i_str[1])
+    i3 = int(i_str[2])
+    all_conditions = map(lambda x: x%2 == 0, [i1,i2,i3])
+
+    if all(all_conditions):
+
+        # print(i, end = ", ")
+        print(i) 
