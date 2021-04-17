@@ -270,16 +270,17 @@ teams = ["liverpool", "acmilan", "arsenal", "juventus", "mancity"]
 #         print(i, end = ", ")
 
 
-for i in range (100, 401):
+# for i in range (100, 401):
 
-    i_str = str(i)
+#     i_str = str(i)
 
-    i1 = int(i_str[0])
-    i2 = int(i_str[1])
-    i3 = int(i_str[2])
-    all_conditions = map(lambda x: x%2 == 0, [i1,i2,i3])
+#     i1 = int(i_str[0])
+#     i2 = int(i_str[1])
+#     i3 = int(i_str[2])
+#     all_conditions = map(lambda x: x%2 == 0, [i1,i2,i3])
 
-    if all(all_conditions):
+#     if all(all_conditions):
 
-        # print(i, end = ", ")
-        print(i) 
+#         # print(i, end = ", ")
+#         print(i) 
+
