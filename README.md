@@ -23,3 +23,4 @@ W3RESOURCE SAMPLE EXCERCISES: https://www.w3resource.com/python-exercises/python
 
 LISTS - https://realpython.com/python-lists-tuples/
 DICT - https://realpython.com/python-lists-tuples/
+FUNCTIONS - https://realpython.com/defining-your-own-python-function/
