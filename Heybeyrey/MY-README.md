@@ -1,0 +1,37 @@
+
+https://code.visualstudio.com/api/references/icons-in-labels
+
+https://www.geeksforgeeks.org/python-program-split-join-string/
+
+ - GIT REPO - https://github.com/dtekluva/cohort4b1wknd.git
+
+ - SDLC LINK -  https://www.tutorialspoint.com/sdlc/sdlc_overview.htm
+
+ - KEYWORDS LINK - https://www.programiz.com/python-programming/
+ keywords-identifier#:~:text=Keywords%20are%20the%20reserved%20words,33%20keywords%20in%20Python%203.7.
+
+ - REAL PYTHON DATATYPES INTRO - https://realpython.com/python-data-types/
+
+ - REAL PYTHON HELLO WORLD https://realpython.com/interacting-with-python/
+
+ - WEEK 5 CONDITIONAL STATEMENTS MATERIAL - https://realpython.com/python-conditional-statements/
+
+ - WEEK 6 TUTORIALS POINT ON DATETIME - https://www.programiz.com/python-programming/datetime/strftime
+
+  REALPYTHON ON LOOPS
+    WHILE LOOPS & LISTS - https://realpython.com/lessons/while-loops-and-lists/
+    FOR   LOOPS - https://realpython.com/python-for-loop/
+    WHILE LOOPS - https://realpython.com/python-while-loop/
+
+
+W3RESOURCE SAMPLE EXCERCISES: https://www.w3resource.com/python-exercises/python-conditional-statements-and-loop-exercises.php
+
+https://realpython.com/python-sets/#frozen-sets
+https://realpython.com/introduction-to-python-generators/
+
+https://www.dataquest.io/blog/python-api-tutorial/
+
+
+
+
+
