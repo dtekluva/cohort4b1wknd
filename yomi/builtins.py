@@ -157,10 +157,52 @@
 import datetime
 import time
 
-while True:
+# while True:
 
-    current_time = datetime.datetime.now()
-# print(current_time)
+#     current_time = datetime.datetime.now()
+# # print(current_time)
 
-    print(current_time.hour, current_time.minute, current_time.second, sep = ":")
-    time.sleep(1)
+#     print(current_time.hour, current_time.minute, current_time.second, sep = ":")
+#     time.sleep(1)
+
+# num = 500
+# max_num = 1000
+
+# while num < max_num:
+
+#     if num != 0 and num %3 == 0 and num %32 == 0:
+#         print("Found! Our number is", num)
+#         break
+
+#     num += 1
+
+# else:
+#     print("Sorry number matches your description")
+
+# mins = 2
+# sec = 0
+
+# while mins > -1:
+#     while sec > 0:
+#         print(mins, "mins:", sec, "secs")
+#         sec -= 1
+#         time.sleep(1)
+
+#     sec = 60
+#     mins -= 1
+ 
+# items_found = 0
+
+# for i in range(1500, 2701):
+#     if (i%7 == 0) and (i%5 == 0):
+#         # print(i)
+#         items_found += 1
+# print(items_found)
+
+
+items = []
+for i in range(100, 401):
+    s = str(i)
+    if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0):
+        items.append(s)
+print( ",".join(items))
