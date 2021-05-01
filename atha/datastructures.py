@@ -122,5 +122,51 @@
 
 # print(count)
 
+#Write a Python program to get a list, sorted in increasing order by the last element in each tuple from a given list of non-empty tuples.
     
-values = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+# values = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+
+# remove duplicates from list
+# using set datastructure
+
+# numbers = [1,2,3,4,1,1,1,2,1,3,4,1,5,3,5,6]
+# non_dups = list(set(numbers))
+# print(non_dups)
+
+# # USING A FOR LOOP
+
+# non_dups = []
+
+# for number in numbers:
+#     if number in non_dups:
+#         continue
+#     else:
+#         non_dups.append(number)
+
+# print(non_dups)
+
+# Write a Python function that takes two lists and returns True if they have at least one common member.
+
+# a = [1,2,3,4,5]
+# b = [9,8,7,6,9]
+
+# set_a = set(a) # convert lists to set in order to use intersect functionlity from sets
+# set_b = set(b)
+
+# intersect = set_a.intersection(set_b)
+# print(intersect)
+# print("A and B a have atleast 1 common values: ", bool(intersect))
+
+# Write a Python program to generate and print a list of first and last 5 elements where the values are square of numbers between 1 and 30 (both included)
+
+numbers = range(1, 31)
+squares = map(lambda nums: nums**2, numbers)
+
+square_nums = lambda nums: nums**2
+squares = map(square_nums, numbers)
+
+squares_list = list(squares)
+last5 = squares_list[-5:]
+first5 = squares_list[0:5]
+
+print(first5 + last5)
