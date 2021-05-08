@@ -1,9 +1,0 @@
-Please find the corrsponding number that when multiplied by 3 gives a sum whos value is the same as the last value of the original number
-
-i.e
-
-> 301 + 301 + 301
->> 111
-
-> 214 + 214 + 214
->> 444

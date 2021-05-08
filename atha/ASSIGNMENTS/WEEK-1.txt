@@ -1,4 +1,0 @@
-- KEYWORDS URL - 
-https://www.programiz.com/python-programming/keywords-identifier#:~:text=Keywords%20are%20the%20reserved%20words,33%20keywords%20in%20Python%203.7.
-
-READ UP ON KEYWORDS AND GIVE A HIGH LEVEL DESCRIPTION ON NEXT CLASS
