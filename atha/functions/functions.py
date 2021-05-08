@@ -70,19 +70,23 @@ x = 50
 
 # print(upcases, lowercases)
 
-def case_counter(string):
+# def case_counter(string):
 
-    upcases = 0
-    lowercases = 0
+#     upcases = 0
+#     lowercases = 0
 
-    for char in string:
-        # print(char, char.isupper(), char.islower())
+#     for char in string:
+#         # print(char, char.isupper(), char.islower())
 
-        if char.islower():
-            lowercases += 1
-        elif char.isupper():
-            upcases += 1
+#         if char.islower():
+#             lowercases += 1
+#         elif char.isupper():
+#             upcases += 1
 
-    print(upcases, lowercases)
+#     print(upcases, lowercases)
 
-case_counter("How are you Bolade.")
+# case_counter("How are you Bolade.")
+
+file_path = r"C:\Users\kboys\OneDrive\Desktop\CLASSES\UNIVELCITY CLASSES\cohort4b1wknd\materials\statement2.csv" #make to get you correspinding file path
+file = open(file=file_path, mode = "r")
+
