@@ -1,0 +1,5 @@
+git add . # add all changes to to git logs
+git commit -m "message" # where message ccan be anything
+
+git push origin segun # push to th segun branch
+git pull origin atha # to pull from the atha branch into yours
