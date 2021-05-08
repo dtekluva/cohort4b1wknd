@@ -34,13 +34,55 @@ x = 50
 # print(x)
 # print(x)
 
-def check_intersect(list_a, list_b):
+# def check_intersect(list_a, list_b):
 
-    set_a = set(list_a) # convert lists to set in order to use intersect functionlity from sets
-    set_b = set(list_b)
+#     set_a = set(list_a) # convert lists to set in order to use intersect functionlity from sets
+#     set_b = set(list_b)
 
-    intersect = set_a.intersection(set_b)
-    print(intersect)
-    print("A and B a have atleast 1 common values: ", bool(intersect))
+#     intersect = set_a.intersection(set_b)
+#     print(intersect)
+#     print("A and B a have atleast 1 common values: ", bool(intersect))
 
-check_intersect([1,2,3], [5, 6,7])
+# check_intersect([1,2,3], [5, 6,7]) 
+
+# string = "my text"
+# def reverse_text(string):
+
+#     reversed_str  = string[::-1]
+#     print(reversed_str)
+
+# reverse_text(string)
+
+# Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters. Go to the editor
+
+# word = "Hello Mr Samuel Okon"
+
+# upcases = 0
+# lowercases = 0
+
+# for char in word:
+#     print(char, char.isupper(), char.islower())
+
+#     if char.islower():
+#         lowercases += 1
+#     elif char.isupper():
+#         upcases += 1
+
+# print(upcases, lowercases)
+
+def case_counter(string):
+
+    upcases = 0
+    lowercases = 0
+
+    for char in string:
+        # print(char, char.isupper(), char.islower())
+
+        if char.islower():
+            lowercases += 1
+        elif char.isupper():
+            upcases += 1
+
+    print(upcases, lowercases)
+
+case_counter("How are you Bolade.")
