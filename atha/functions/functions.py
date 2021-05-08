@@ -243,3 +243,5 @@ def writeback(data, name = "untitled.csv"):
     file.close()
 
 writeback(filter, "Myfilter.csv")
+
+self = 67
