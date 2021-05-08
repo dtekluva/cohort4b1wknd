@@ -102,18 +102,144 @@ x = 50
 #     print("\n\n")
 
 
-# GOING FURTHERR TO PRINT JUST LODGEMENTS IN OPENED STATEMENT
+# # GOING FURTHERR TO PRINT JUST LODGEMENTS IN OPENED STATEMENT
+
+# file_path = r"C:\Users\kboys\OneDrive\Desktop\CLASSES\UNIVELCITY CLASSES\cohort4b1wknd\materials\statement2.csv" #make to get you correspinding file path
+
+
+# statement_file = open(file_path, "r")# calling open builtin function using positional argument
+
+# for line in statement_file:
+
+#     splitted_line = line.split(",")
+#     lodgement = splitted_line[4]
+#     description = splitted_line[6]
+#     # print(line.split(",")[4])
+#     # print("\n\n")
+#     print(lodgement, description, sep = "            ")
+
+# # GOING FURTHER TO COUNT AND PRINT JUST WITHDRAWALS OF N50
+
+# file_path = r"C:\Users\kboys\OneDrive\Desktop\CLASSES\UNIVELCITY CLASSES\cohort4b1wknd\materials\statement2.csv" #make to get you correspinding file path
+
+
+# statement_file = open(file_path, "r")# calling open builtin function using positional argument
+# count_500 = 0
+
+# for line in statement_file:
+
+#     splitted_line = line.split(",")
+#     withdrawal = splitted_line[3]
+#     description = splitted_line[6]
+
+#     if withdrawal == "50.00":
+#         print(description)
+#         count_500 += 1
+
+# print(count_500)
+
+
+
+
+# # CONVERT TO A FUNCTION
+
+# file_path = r"C:\Users\kboys\OneDrive\Desktop\CLASSES\UNIVELCITY CLASSES\cohort4b1wknd\materials\statement2.csv" #make to get you correspinding file path
+
+# def get_count_of_transaction(file_path, target_amount, target_column, description_col):
+
+#     statement_file = open(file_path, "r")# calling open builtin function using positional argument
+#     count_500 = 0
+
+#     for line in statement_file:
+
+#         splitted_line = line.split(",")
+#         withdrawal = splitted_line[target_column]
+#         description = splitted_line[description_col]
+
+#         if withdrawal == target_amount:
+#             print(description)
+#             count_500 += 1
+
+#     print(f"Total {target_amount} : ", count_500)
+
+# get_count_of_transaction(file_path, "500.00", 3, 6)
+
+
+
+
+
+# CONVERT TO A FUNCTION AND GET THE SUM OF A TARGET TRANSACTION VALUE
 
 file_path = r"C:\Users\kboys\OneDrive\Desktop\CLASSES\UNIVELCITY CLASSES\cohort4b1wknd\materials\statement2.csv" #make to get you correspinding file path
 
+# def get_count_of_transaction(file_path, target_amount_min, target_amount_max, target_column, description_col):
 
-statement_file = open(file_path, "r")# calling open builtin function using positional argument
+#     statement_file = open(file_path, "r").readlines() # calling open builtin function using positional argument
+#     statement_file.pop(0) #remove first element or row from read file
+#     count_500 = 0
+#     sum_of_target =0
 
-for line in statement_file:
+#     for line in statement_file:
 
-    splitted_line = line.split(",")
-    lodgement = splitted_line[4]
-    description = splitted_line[6]
-    # print(line.split(",")[4])
-    # print("\n\n")
-    print(lodgement, description, sep = "            ")
+#         splitted_line = line.split(",")
+#         withdrawal = splitted_line[target_column]
+#         float_withdrawal = float(withdrawal)
+
+#         description = splitted_line[description_col]
+
+#         if float_withdrawal <= target_amount_max and float_withdrawal >= target_amount_min:
+#             print(float_withdrawal, description, sep = "                 ")
+#             count_500 += 1
+#             sum_of_target += float_withdrawal
+
+#     print(f"Total target : ", count_500)
+#     print(f"Sum of target : ", sum_of_target)
+
+# get_count_of_transaction(file_path, 1000, 10000 , 3, 6)
+
+
+# MAKE CREATED FUNCTION RETURN THE ROWS FOUND THAT MATCH THE BOUNDARIES SET SO THAT WE CAN WRITE THEM INTO ANOTHER FILE
+
+def get_count_of_transaction(file_path, target_amount_min, target_amount_max, target_column, description_col):
+
+    statement_file = open(file_path, "r").readlines() # calling open builtin function using positional argument
+    header = statement_file.pop(0) #remove first element or row from read file
+    count_500 = 0
+    sum_of_target =0
+
+    withdrawal_list = [header]
+
+    for line in statement_file:
+
+        splitted_line = line.split(",")
+        withdrawal = splitted_line[target_column]
+        float_withdrawal = float(withdrawal)
+
+        description = splitted_line[description_col]
+
+        if float_withdrawal <= target_amount_max and float_withdrawal >= target_amount_min:
+            print(float_withdrawal, description, sep = "                 ")
+            count_500 += 1
+            sum_of_target += float_withdrawal
+            withdrawal_list.append(line)
+
+    print(f"Total target : ", count_500)
+    print(f"Sum of target : ", sum_of_target)
+
+    return withdrawal_list
+
+filter = get_count_of_transaction(file_path, 6000, 100000 , 3, 6)
+print(filter)
+
+def writeback(data, name = "untitled.csv"):
+
+    file_name = name
+    file = open(f"materials/{name}", "a")
+
+    for line in data:
+
+        file.write(line)
+
+    file.close()
+
+writeback(filter, "Myfilter.csv")

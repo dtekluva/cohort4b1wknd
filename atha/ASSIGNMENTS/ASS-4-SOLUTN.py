@@ -29,3 +29,5 @@ share = total_sweets//3 # GET FLOOR DIVISION VALUE
 remainder = total_sweets%3 # GET REMAINDER OR MODULUS
 
 print(f"HELLO GUYS, EACH OF YOU SHOULD GET {share}SWEETS AND {remainder} SHOULD BE DISCARDED")
+
+
