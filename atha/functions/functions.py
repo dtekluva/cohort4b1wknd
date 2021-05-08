@@ -87,13 +87,33 @@ x = 50
 
 # case_counter("How are you Bolade.")
 
+# file_path = r"C:\Users\kboys\OneDrive\Desktop\CLASSES\UNIVELCITY CLASSES\cohort4b1wknd\materials\statement2.csv" #make to get you correspinding file path
+
+# # statement_file = open(file=file_path, mode = "r") # calling open builtin function using keyword argument
+
+# statement_file = open(file_path, "r")# calling open builtin function using positional argument
+
+# statement = statement_file.readlines()# Reads line after line
+# # statement = file.read()# reads character by character
+# # print(statement)
+
+# for line in statement:
+#     print(line)
+#     print("\n\n")
+
+
+# GOING FURTHERR TO PRINT JUST LODGEMENTS IN OPENED STATEMENT
+
 file_path = r"C:\Users\kboys\OneDrive\Desktop\CLASSES\UNIVELCITY CLASSES\cohort4b1wknd\materials\statement2.csv" #make to get you correspinding file path
-file = open(file=file_path, mode = "r")
 
-statement = file.readlines()# Reads line after line
-# statement = file.read()# reads character by character
-# print(statement)
 
-for value in statement:
-    print(value)
-    print("\n\n")
+statement_file = open(file_path, "r")# calling open builtin function using positional argument
+
+for line in statement_file:
+
+    splitted_line = line.split(",")
+    lodgement = splitted_line[4]
+    description = splitted_line[6]
+    # print(line.split(",")[4])
+    # print("\n\n")
+    print(lodgement, description, sep = "            ")
