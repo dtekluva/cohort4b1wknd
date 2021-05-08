@@ -90,3 +90,10 @@ x = 50
 file_path = r"C:\Users\kboys\OneDrive\Desktop\CLASSES\UNIVELCITY CLASSES\cohort4b1wknd\materials\statement2.csv" #make to get you correspinding file path
 file = open(file=file_path, mode = "r")
 
+statement = file.readlines()# Reads line after line
+# statement = file.read()# reads character by character
+# print(statement)
+
+for value in statement:
+    print(value)
+    print("\n\n")
