@@ -160,3 +160,9 @@ def get_count_of_transaction(file_path, target_amount, target_column, descriptio
     print(f"Total {target_amount} : ", count_500)
 
 get_count_of_transaction(file_path, "500.00", 3, 6)
+
+
+
+
+
+
