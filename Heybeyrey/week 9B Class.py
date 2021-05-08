@@ -1,9 +1,9 @@
-# FUNCTIONS
-# you can import a workbook=worksheet = name space inside another namespace
+# USER-DEFINED FUNCTIONS
+# # you can import a workbook=worksheet = name space inside another namespace
 
 # import helpers
 # from helpers import helper1     # this is to import the sub-folder
-# from helpers import *   # this is to import every variable in helpers
+# from helpers import *   # this is to import every variable in helpers ie the import asterisks
 # print(helper1)           #use this if imported the sub-folder
 
 # # ORRRR
@@ -15,7 +15,7 @@
 # from helpers import helper1, helper2 
 
 
-# The zen of Python: call up python and import this 
+# The zen of Python: call up python, type import this and run
 # to import namespace, all files must me in the same folder/path
 
 import week_2_class       # the nomenclature must not have space
@@ -40,14 +40,15 @@ def f():
     print(s)
 f()
 
-x = [1,2,3,4,5]
-y = [9,8,7,6,5]
+    # so you can either define your arguments inside  the function, on the call function. But not ourside the function biko so that when calling the function, you are clear as to where the figures will pick from especially if they have the same variable name as other variables outside the function. Guess I didnt ge this knowledge in class when I did this.
+ x = [1,2,3,4,5]                     
+# y = [9,8,7,6,5]       
 # Sx = set(x)
 # Sy = set(y)
-def f(Sx = set(x), Sy = set(y)):
-    intersect = Sx.intersection(Sy)
-    print(bool(intersect))
-f()
+# def f(Sx,Sy):
+#     intersect = Sx.intersection(Sy)
+#     print(bool(intersect))
+# f(Sx,Sy)
 
 
 # ORRRR
@@ -57,8 +58,7 @@ def check_intersection (x,y):
     Sy = set(y)
     intersect = Sx.intersection(Sy)
     print(bool(intersect))
-check_intersection([1,2,3,4,5], [9,8,7,6,5])
-
+check_intersection([1,2,3,4,5], [9,8,7,6,5])    
 
 
 

@@ -9,6 +9,28 @@
 # # new_staff = ["josh", "evelyn", "richy"]
 # # new_staff_salaries = [100000, 120000, 90000]
 
+
+#WHY USE A FOR LOOP WHEN WE CAN JUST SIMPLY EXTEND IT BY THE ADDITIONS
+names = ["john", "slim", "kunle", "ini"]
+salaries = [23000, 1000, 23000, 50000, 13000]
+names.append("sam")
+salaries.append(30000)
+
+print(names, salaries, sep = '\n')
+
+new_staff = ["josh", "evelyn", "richy"]
+new_staff_salaries = [100000, 120000, 90000]
+
+names.extend(new_staff)
+salaries.extend(new_staff_salaries)
+
+
+print(names, salaries, sep = '\n')
+
+
+
+
+
 # # # for i in range(3):
 # #     # print(i)
 # #     # print(new_staff[i])
@@ -39,7 +61,7 @@
 # # print(salary_count)
 
 # # # .extend is a shorter form for the whole for loop we used above
-# # names.extend(new_staff)
+# # names.extend(new_staff)                              #EXACTLY, Atha just likes using loops
 # # salaries.extend(new_staff_salaries)
 # # print(names, salaries)
 
@@ -77,6 +99,11 @@
 # Ages = [34,65,57,90]
 # zipped_value = zip(names,salaries,Ages)       # so we can zip more than 2 line items, you can also zip tuples 
 # print(list(zipped_value))
+names = ["john", "slim", "kunle", "ini"]
+salaries = [23000, 1000, 23000, 50000, 13000]
+Ages = [34,65,57,90]
+zipped = zip(names,salaries,Ages)
+print(list(zipped))            # note it discarded the 13000
 
 # list_of_zipped_values = list(zipped_value)    #omo, me I dinnor understand this one
 # list_of_zipped_values.sort(key=lambda names:names[1], reverse=True)
@@ -132,12 +159,12 @@ b = [9,8,7,6,5]
 
 set_a = set(a)
 set_b = set(b)
-intersect = set_a.intersection((set_b))    # so we have used the .intersect, .union function
+intersect = set_a.intersection((set_b))    # so we have used the .intersection, .union function. so to add 2 or more sets, we can either use the extend function or + function or the union function. though the union will remove duplicates as well
 print(intersect)
 print(bool(intersect))
 
 
-# windows+V = get out all items in your clip  board
+# windows+V = get out all items in your clip  board.....very important
 
 numbers = range(1, 31)
 squares = map(lambda nums:nums**2, numbers)

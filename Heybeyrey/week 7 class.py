@@ -7,8 +7,8 @@
 # i = 100
 # while i < 1000:
 #     i+=1
-#     mulp_i= i*3
-#     istr = str(i)
+    # mulp_i= i*3
+     #     istr = str(i)
     # lastcha = str(i)[2]
     # lastchaerr = str(lastcha*3)
     # if mulp_i == int(lastchaerr):
