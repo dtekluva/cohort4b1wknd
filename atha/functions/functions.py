@@ -43,4 +43,4 @@ def check_intersect(list_a, list_b):
     print(intersect)
     print("A and B a have atleast 1 common values: ", bool(intersect))
 
-check_intersect([1,2,3], [5, 6,7])
+check_intersect([1,2,3], [5, 6,7]) 
