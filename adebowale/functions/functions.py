@@ -45,15 +45,26 @@ x = 50
 
 # check_intersect([1,2,3], [5, 6,7]) 
 
-x = 'The Ball is mine'
+file_path = r"C:\Users\Adebowale\Desktop\UNivelcity\DataScience class\cohort4b1wknd\materials\statement2.csv" #make to get you correspinding file path
 
-def No_of_upper_lower_case(word):
-    uppercounter = 0
-    lowercounter = 0
-    if No_of_uppercase = word.isupper():
-        counter
-    No_of_uppercase = word.count(word.isupper())
-    No_of_lowercase = word.count(word.islower())
-    print( 'this is lowercase',No_of_lowercase,'the is no of uppercase',No_of_uppercase)
+file = open(file=file_path, mode = "r")
+counter =0
+for line in file:
 
-No_of_upper_lower_case(x)
+    splitted_line = line.split(",")
+    withdrawal = splitted_line[3]
+    print(withdrawal)
+
+    
+    if withdrawal == '500.00':
+        counter +=1
+
+print('\n\n')
+
+print(counter)
+
+
+
+        
+
+
