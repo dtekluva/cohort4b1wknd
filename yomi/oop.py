@@ -164,7 +164,7 @@ class Dog():
     nostrils = 2
     fur = True
     ears = 2
-    bark = "woof,woof,woof"
+    # bark = "woof,woof,woof"
 
     def describe(self):
         print(f""" 
@@ -172,20 +172,30 @@ class Dog():
                     But I have 
                     {self.legs} hands,
                     {self.eyes} eyes,
-                    {self.nostrils} nose,
+                    {self.nostrils} nostrils,
                     {self.fur} fur,
                     {self.bark} woof woof
                 """)
+
+    def bark(self):
+        import time
+
+        print("woof")
+        time.sleep(1)
+        print("woof")
+        time.sleep(1)
+        print("woof")
+        time.sleep(1)
 
 class newspecie(Dog): # INHERITED CLASS IS PUT IN PARENTHESIS
 
     def __init__(self, name):
         self.name = name
     
-Pug = New_Dog(name = "Pug")
+Pug = newspecie(name = "Pug")
 Pug.describe()
 
-class New_Dog(Dog): # INHERITED CLASS IS PUT IN PARENTHESIS
+class newspecie(Dog): # INHERITED CLASS IS PUT IN PARENTHESIS
     
     def __init__(self, name):
         self.name = name
@@ -193,23 +203,24 @@ class New_Dog(Dog): # INHERITED CLASS IS PUT IN PARENTHESIS
     # DESCRIBE METHOD IS MORPHED TO ADD NAME ( POLYMORPHISM )
     def describe(self):
         print(f""" 
-                    Hello my name is {self.name}.
-                    But I have 
+                    Hello i am a {self.name}.
+                    and I have 
                     {self.legs} legs,
                     {self.eyes} eyes,
-                    {self.nostrils} nose,
+                    {self.nostrils} nostrils,
                     {self.fur} fur
                 """)
-samoyad = New_Dog(name = "samoyad")
+samoyad = newspecie(name = "samoyad")
 samoyad.describe()
 
-New_Dog = ["Lasa",
-                "DobberMan",
-                "Goldenretriver"]
+new_bingo = ["Bulldog",
+                "Terrier",]
 
-for Dog in New_Dog:
-    specie = New_Dog(name = Dog)
+for bingo in new_bingo:
+    specie = newspecie(name = bingo)
     specie.describe()
+    specie.bark()
+
 
 
 
