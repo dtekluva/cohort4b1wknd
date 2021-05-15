@@ -93,16 +93,68 @@
 
 
 
+class Human():
+
+    hands = 2
+    legs = 2
+    eyes = 2
+    nose = 2
+    fur = False
+
+    def describe(self):
+        print(f""" 
+                    Hello I have no name.
+                    But I have 
+                    {self.hands} hands,
+                    {self.eyes} eyes,
+                    {self.nose} nose,
+                    {self.fur} fur
+                """)
 
 
+# ade = Human()
+# print(ade.describe())
 
 
+# INHERITED EVOLVED MAN
+
+class Mordern_Man(Human): # INHERITED CLASS IS PUT IN PARENTHESIS
+
+    def __init__(self, name):
+        self.name = name
+    
+john = Mordern_Man(name = "John")
+john.describe()
 
 
+# INHERITED EVOLVED MAN EVOLVES MORE WITH THE ADDITION OF NAME TO THE DESCRIBE METHOD
 
+class Mordern_Man(Human): # INHERITED CLASS IS PUT IN PARENTHESIS
+    
+    def __init__(self, name):
+        self.name = name
 
+    # DESCRIBE METHOD IS MORPHED TO ADD NAME ( POLYMORPHISM )
+    def describe(self):
+        print(f""" 
+                    Hello my name is {self.name}.
+                    But I have 
+                    {self.hands} hands,
+                    {self.eyes} eyes,
+                    {self.nose} nose,
+                    {self.fur} fur
+                """)
+    
+dele = Mordern_Man(name = "dele")
+dele.describe()
 
+mordern_men = ["Kunle",
+                "Saheed",
+                "Mummy"]
 
+for man in mordern_men:
+    person = Mordern_Man(name = man)
+    person.describe()
 
 
 
