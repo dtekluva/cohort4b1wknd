@@ -12,13 +12,30 @@
 # print(values)
 
 
-def check_them (lista, listb):
+# def check_them (lista, listb):
     
-    set_a = set(lista)
-    set_b = set(listb)
+#     set_a = set(lista)
+#     set_b = set(listb)
 
-    intersect = set_a.intersection(set_b)
-    print(intersect)
-    print("A and B a have atleast 1 common values: ", bool(intersect))
+#     intersect = set_a.intersection(set_b)
+#     print(intersect)
+#     print("A and B a have atleast 1 common values: ", bool(intersect))
 
-check_them([2,3,4,5,6], [3,4,5,6,7])
+# check_them([2,3,4,5,6], [3,4,5,6,7])
+
+
+def case_counter(string):
+    uppercase = 0
+    lowercase = 0
+
+    for char in string:
+        if char.islower():
+            lowercase += 1
+        elif char.isupper():
+            uppercase += 1
+    print("Lower Case", lowercase, "Upper Case", uppercase)
+
+
+case_counter("The Quick Brown Fox")
+
+

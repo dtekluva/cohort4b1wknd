@@ -22,3 +22,4 @@ my_dog2 = Dog(name = "Bingo", age = 34)
 print(my_dog.name)
 my_dog.bark()
 my_dog2.bark()
+
