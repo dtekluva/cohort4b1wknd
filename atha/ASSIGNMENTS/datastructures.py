@@ -1,7 +1,13 @@
-x = [1,2,3,4] # list 
+ # list 
+
 y = (1,2,3,4) # tuple
 
-x[0]= "ada"
-print(x)
+
+
+([1,2,3,4])[0]= "ada"
+
+print([1,2,3,4])
+
 y[0] = 4
+
 print(y)

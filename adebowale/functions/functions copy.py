@@ -7,7 +7,7 @@
 
 # print(helpers.helper1) # use this if imported with first format
 # print(helper1) # use this if imported with second format you actually have access to all variables from namespace
-# x = 50
+x = 50
 
 # def ordinary(): # function creation
 #     x = 30
@@ -67,7 +67,7 @@
 #         lowercases += 1
 #     elif char.isupper():
 #         upcases += 1
-
+# print ('\n')
 # print(upcases, lowercases)
 
 # def case_counter(string):
@@ -104,12 +104,13 @@
 
 # # GOING FURTHERR TO PRINT JUST LODGEMENTS IN OPENED STATEMENT
 
-# file_path = r"C:\Users\kboys\OneDrive\Desktop\CLASSES\UNIVELCITY CLASSES\cohort4b1wknd\materials\statement2.csv" #make to get you correspinding file path
+file_path = r"C:\Users\Adebowale\Desktop\UNivelcity\DataScience class\cohort4b1wknd\materials\statement2.csv" #make to get you correspinding file path
 
 
-# statement_file = open(file_path, "r")# calling open builtin function using positional argument
+statement_file = open(file_path, "r")# calling open builtin function using positional argument
 
 # for line in statement_file:
+#     # print(line)
 
 #     splitted_line = line.split(",")
 #     lodgement = splitted_line[4]
@@ -132,7 +133,7 @@
 #     withdrawal = splitted_line[3]
 #     description = splitted_line[6]
 
-#     if withdrawal == "50.00":
+#     if withdrawal == "500.00":
 #         print(description)
 #         count_500 += 1
 
@@ -170,32 +171,32 @@
 
 # CONVERT TO A FUNCTION AND GET THE SUM OF A TARGET TRANSACTION VALUE
 
-file_path = r"C:\Users\kboys\OneDrive\Desktop\CLASSES\UNIVELCITY CLASSES\cohort4b1wknd\materials\statement2.csv" #make to get you correspinding file path
+# file_path = r"C:\Users\kboys\OneDrive\Desktop\CLASSES\UNIVELCITY CLASSES\cohort4b1wknd\materials\statement2.csv" #make to get you correspinding file path
 
-# def get_count_of_transaction(file_path, target_amount_min, target_amount_max, target_column, description_col):
+def get_count_of_transaction(file_path, target_amount_min, target_amount_max, target_column, description_col):
 
-#     statement_file = open(file_path, "r").readlines() # calling open builtin function using positional argument
-#     statement_file.pop(0) #remove first element or row from read file
-#     count_500 = 0
-#     sum_of_target =0
+    statement_file = open(file_path, "r").readlines() # calling open builtin function using positional argument
+    statement_file.pop(0) #remove first element or row from read file
+    count_500 = 0
+    sum_of_target =0
 
-#     for line in statement_file:
+    for line in statement_file:
 
-#         splitted_line = line.split(",")
-#         withdrawal = splitted_line[target_column]
-#         float_withdrawal = float(withdrawal)
+        splitted_line = line.split(",")
+        withdrawal = splitted_line[target_column]
+        float_withdrawal = float(withdrawal)
 
-#         description = splitted_line[description_col]
+        description = splitted_line[description_col]
 
-#         if float_withdrawal <= target_amount_max and float_withdrawal >= target_amount_min:
-#             print(float_withdrawal, description, sep = "                 ")
-#             count_500 += 1
-#             sum_of_target += float_withdrawal
+        if float_withdrawal <= target_amount_max and float_withdrawal >= target_amount_min:
+            print(float_withdrawal, description, sep = "                 ")
+            count_500 += 1
+            sum_of_target += float_withdrawal
 
-#     print(f"Total target : ", count_500)
-#     print(f"Sum of target : ", sum_of_target)
+    print(f"Total target : ", count_500)
+    print(f"Sum of target : ", sum_of_target)
 
-# get_count_of_transaction(file_path, 1000, 10000 , 3, 6)
+get_count_of_transaction(file_path, 1000, 10000 , 3, 6)
 
 
 # MAKE CREATED FUNCTION RETURN THE ROWS FOUND THAT MATCH THE BOUNDARIES SET SO THAT WE CAN WRITE THEM INTO ANOTHER FILE
@@ -243,5 +244,3 @@ file_path = r"C:\Users\kboys\OneDrive\Desktop\CLASSES\UNIVELCITY CLASSES\cohort4
 #     file.close()
 
 # writeback(filter, "Myfilter.csv")
-
-# self = 67

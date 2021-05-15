@@ -1,0 +1,21 @@
+# datalist = [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {"class":'V', "section":'A'}]
+# # for i in datalist:
+
+    # datalist_pop = datalist.pop()
+    # print(i, type(i), sep='   ' )
+    # print(type(datalist_pop))
+
+# for i in range(0,10):
+    
+#     if i == 3 or i == 6:
+#         continue
+#     print(i)
+    
+# while datalist:
+#     i = datalist.pop()
+#     print(i, type(i))
+
+new_list = [0,1]
+for i in range(50):
+    new_list +=1
+    print(new_list)
