@@ -270,25 +270,297 @@
 
 
 
-val ="32"
-print(val * 2)
-casted_val= int(val)
-print(casted_val * 2)
+# val ="32"
+# print(val * 2)
+# casted_val= int(val)
+# print(casted_val * 2)
 
 
 
+# number = '300'
+# print(number * 4)
+
+# converted_num = int(number)
+# print(converted_num * 4)
 
 
+# float_num = float(number)
+# print(float_num * 4)
+
+# my_range = range(10,20)
+# print(my_range)
+# print(list(my_range))
+
+# my_range= range(12,31,2)
+# print(my_range)
+# print(list(my_range))
+
+# my_leap_years= range(1980,2021, 5)
+# print(list(my_leap_years))
+
+# my_name= "matthew"
+# reversed_name = reversed(my_name)
+# print(list (reversed_name))
+
+# pi=22/7
+# print(pi)
+# decimal_places = 2
+
+# rounded_pi = round(pi, 2)
+# print(rounded_pi)
+
+# rounded_pi = round(pi, 4)
+# print(rounded_pi)
+
+# numbers = [23,1,4,10,19,6,22,0]
+# print(sorted(numbers))
+
+# students = ["ade",90], ["sam", 66], ["john", 99], ["lisa", 77]
+# print(sorted(students))
+
+# numbers = [23,1,4,10,19,6,22,0]
+# print(sum(numbers))
 
 
+# my_students = dict (ali = 1000, kunle = 22111, sam = 90000, sola = 320100)
+# print(my_students)
+# print(my_students["ali"])
+
+# print(bool(1))
+# print(bool(10))
+# print(bool(0))
+# print(bool([]))
+# print(bool(["ade"]))
+# print(bool("ade"))
+# print(bool(""))
+# print(bool(" "))
+
+# words = ["salami", "tunde", "salau", "winston", "  john"]
+# length_of_words = map(len, words)
+# print(length_of_words)
+# print(list(length_of_words))
 
 
+# length_of_words = map(len, words)
+# mapped_objects = length_of_words
+# unravelled_object = list(mapped_objects)
+# print(unravelled_object)
 
 
+# reversed_words = map(reversed, words)
+# print(list(reversed_words)) 
+# DEF IS USED TO CREATE A FUNCTION EG PRINT (THAT DOES NOT ALREAD EXIST IN PYTHON)
+
+# def
+# def reverse_for_real(value):
+    # return list(reversed(value))
+
+# mapped_object = map(reverse_for_real, words)
+
+# unravelled_objects = list(mapped_object)
+# print(unravelled_objects)
+
+# ADD MR TO ALL THE NAMES
+
+# words = ["salami", "tunde", "salau", "winston", "  john"]
+
+# def add_salutation(name):
+#     name_plus_salutation = "Mr " + name
+#     return name_plus_salutation
+
+# saluted_name = add_salutation("salami")
+# print(saluted_name)
+
+# print(list(map(add_salutation, words)))
 
 
+# words = ["salami", "tunde", "salau", "winston", "  john"]
+
+# def add_salutation(name):
+#     name_plus_salutation = "Mr " + name
+#     return name_plus_salutation
 
 
+# print(list(map(add_salutation, words)))
+
+# length_of_words = map(len, words)
+# print(length_of_words)
+# print(list(length_of_words))
+ 
+
+# WRITE OUT THE NAMES,PUT THIS SIGN -> AND COUNT THE LETTERS IN EACH NAME.(MAP TO GET THE LENGTH OF EACH NAMES)
+
+# def length (name):
+#     new_name = name + " -> " + str(len(name))
+#     return new_name
 
 
+# print(list(map(length, words)))
+
+
+# words = ["salami", "tunde", "salau", "winston", "  john"]
+
+
+# MAP THESE NUMBERS TO GET THE SQUARE OF EACH NUMBER 
+
+# my_list=[3,2,5,7,3,7]
+
+# def squarez(value):
+#     new_list = value ** 2
+#     return new_list
+
+# print(list(map(squarez, my_list)))
+
+# MAP THESE WORDS TO GET THE TOTAL NUMBER OF EACH WORDS AND THEIR SQUARES
+
+# words = ["salami", "tunde", "salau", "winston", "  john"]
+# length_of_words = map(len, words)
+# print(length_of_words)
+# print(list(length_of_words))
+
+# def more_help(words):
+#     new_caption = len(words)**2
+#     return new_caption
+
+# print(list(map(more_help,words)))
+
+# METHODS (STRING METHODS)
+
+# string = "I am a boy and my name IS john"
+# lower_case_version = string.lower()
+# print(lower_case_version)
+
+# string = "I am a boy and my name IS john"
+# upper_case_version = string.upper()
+# print(upper_case_version)
+
+# string = "I am a boy and my name IS john"
+# string2 = "           JONAH IS here"
+# csv= "a,b,c,d,e,f"
+# print(string)
+# print(string2.strip())
+
+# replace_vers= string.replace("boy","girl")
+# print(replace_vers)
+
+# splitted_string=string.split(" ")
+# print(splitted_string)
+
+# print("-".join(splitted_string))
+# print("*".join(splitted_string))
+
+
+# value_to_be_reversed ="alade"
+# reversed_value = list(reversed("alade"))
+# print(reversed_value)
+# print("".join(list (reversed("alade"))))
+
+# INPUT BUILT IN FUNCTION
+
+# age = 32
+# print(age)
+# print("Your age is ", age)
+# age= input("Please enter your age")
+# print("Your age is ", age)
+
+
+# print("Welcome to my string splitter. HAHAHA!!!.\n")
+# value_to_be_reversed = input("Please enter text to be reversed : ")
+# reversed_value = list(reversed(value_to_be_reversed))
+
+# joined_value =" ".join(reversed_value)
+# print(joined_value)
+
+# QUESTION- CHANGE THE DATE OF BIRTH FORMAT FROM YYYY-MM-DD TO YYYY,MM,DD
+
+# print("Welcome to my string splitter. HAHAHA!!!.\n")
+# value_to_be_splitted = input("Please enter text to be splitted : ")
+# splitted_value = value_to_be_splitted.split("-")
+
+
+# print(splitted_value)
+
+# print(splitted_value)
+# print(splitted_value[0])
+# print(splitted_value[1])
+
+# year_of_birth = int(splitted_value[0])
+# age= 2021 - year_of_birth
+# print("Hello you are" ,age, "years old")
+
+
+# year_of_birth = int(splitted_value[0])
+# month = int(splitted_value[1])
+# age= 2021 - year_of_birth
+# print("Hello you are" ,age, "years old and you were born in" ,month,"th", "month of the year")
+
+
+# QUESTION- GET 2 NUMBERS AND GET THE ADDITION OF THE NUMBERS
+
+# num1 = input ("Please enter num-1 > ")
+# num2 = input ("Please enter num-2 > ")
+
+# print(num1, num2)
+# print(num1 + num2)
+
+
+# num1 = input ("Please enter num-1 > ")
+# num2 = input ("Please enter num-2 > ")
+
+# # print(num1, num2)
+# # print(int(num1) + int(num2))
+# # print(int(num1) + int(num2))
+
+# print(num1, num2)
+# print(int(num1) + int(num2))
+# print(int(num1) * int(num2))
+
+# A PROGRAMME THAT TAKES IN ANY TEXT AND GIVES THE NUMBERS ON THAT TEXT
+
+
+# principal = float(input ("Please enter principal collected : "))
+# rate = float(input ("Please enter rate : "))
+# time = float(input ("Please enter duration : "))
+
+# interest = (principal * rate * time) / 100 *12
+
+# # INCLUDE * 12 BECAUSE I WANT TO CALCULATE THE DURATION IN MONTHS NOT YEARS
+
+# print(interest)
+
+# total_repayment = principal + interest
+
+# # print(f"Principal obtained: {principal}")
+# # print( f"Repayment amount : {total_repayment}")
+# # print( f"Interest accrued : {interest}")
+
+
+# # print("Principal obtained :", principal)
+# # print("Repayment amount : ", total_repayment)
+# # print("Interest_accrued :", interest)
+# # input()
+
+
+# THREE FRIENDS WHO LOVE EACH OTHER A LOT ALWAYS HAVE SWEETS FROM THEIR PARENTS. WHATS THEY DO IS ADD EVERYBODY'S SWEETS AND THEN SHARE THEM EQUALLY AMONGST THEM SELVES AND THEN CRUSH THE REMAINDER. PLEASE CREATE A SMALL PROGRAM TO AID THE FRIENDS CALCULATE EACH PERSONS SHARE.
+
+# # IF INPUTS ARE AS SUCH 
+
+# # >>>FRIEND1_SWEETS = 5
+# # >>>FRIEND2_SWEETS = 6
+# # >>>FRIEND5_SWEETS = 6
+
+# # YOUR RESULT CAN BE AS SUCH 
+
+# # >>> HELLO GUYS, EACH OF YOU SHOULD GET 5SWEETS AND 2 SHOULD BE DISCARDED
+
+
+# FRIEND1_SWEETS = int(input("How many sweets from friend 1: "))
+# FRIEND2_SWEETS = int(input("How many sweets from friend 2: "))
+# FRIEND3_SWEETS = int(input("How many sweets from friend 3: "))
+
+# total_sweets = FRIEND1_SWEETS + FRIEND2_SWEETS + FRIEND3_SWEETS 
+# share = total_sweets // 3
+# remainder = total_sweets%3
+
+# print(f"HELLO GUYS, EACH OF YOU SHOULD GET {share} SWEETS AND {remainder} SHOULD BE DISCARDED")
 
