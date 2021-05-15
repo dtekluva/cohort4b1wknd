@@ -164,19 +164,20 @@ class Dog():
     nostrils = 2
     fur = True
     ears = 2
-    bark = True
+    bark = "woof,woof,woof"
 
     def describe(self):
         print(f""" 
                     Hello I have no name.
                     But I have 
-                    {self.hands} hands,
+                    {self.legs} hands,
                     {self.eyes} eyes,
-                    {self.nose} nose,
-                    {self.fur} fur
+                    {self.nostrils} nose,
+                    {self.fur} fur,
+                    {self.bark} woof woof
                 """)
 
-class New_Dog(Dog): # INHERITED CLASS IS PUT IN PARENTHESIS
+class newspecie(Dog): # INHERITED CLASS IS PUT IN PARENTHESIS
 
     def __init__(self, name):
         self.name = name
