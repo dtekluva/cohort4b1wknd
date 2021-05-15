@@ -159,11 +159,34 @@
 # CREATE A CLASS OF DOG WITH ATTRIBUTES BARK AND DESCRIBE
 # INHERIT FROM THE CLASS WITH NEW SUB CLASSES BULLDOG AND TERRIER AND MORPH TO HAVE THE ATTRIBUTE BREED TYPE IN THE DESCRIPTION
 
+class Dog():
+
+    species = "canis familiaris"
+
+    def bark(self):
+        print("Woof-Woof-Woof")
+        print("Woof-Woof-Woof")
+        print("Woof-Woof-Woof")
+        print("Woof-Woof-Woof")
+
+    def describe(self):
+        print(f"Hello i am a {self.species} member.!!!")
 
 
+class Bull_Dog(Dog):
 
+    breed = "Bull Dog"
 
+    def describe(self):
+        print(f"Hello i am a {self.breed}, and a {self.species} member.!!!")
+    
 
+class Terrier(Dog):
+
+    breed = "Terrier"
+
+    def describe(self):
+        print(f"Hello i am a {self.breed}, and a {self.species} member.!!!")
 
 
 
