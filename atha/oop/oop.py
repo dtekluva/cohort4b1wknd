@@ -93,71 +93,71 @@
 
 
 
-class Human():
+# class Human():
 
-    hands = 2
-    legs = 2
-    eyes = 2
-    nose = 2
-    fur = False
+#     hands = 2
+#     legs = 2
+#     eyes = 2
+#     nose = 2
+#     fur = False
 
-    def describe(self):
-        print(f""" 
-                    Hello I have no name.
-                    But I have 
-                    {self.hands} hands,
-                    {self.eyes} eyes,
-                    {self.nose} nose,
-                    {self.fur} fur
-                """)
-
-
-# ade = Human()
-# print(ade.describe())
+#     def describe(self):
+#         print(f""" 
+#                     Hello I have no name.
+#                     But I have 
+#                     {self.hands} hands,
+#                     {self.eyes} eyes,
+#                     {self.nose} nose,
+#                     {self.fur} fur
+#                 """)
 
 
-# INHERITED EVOLVED MAN
+# # ade = Human()
+# # print(ade.describe())
 
-class Mordern_Man(Human): # INHERITED CLASS IS PUT IN PARENTHESIS
 
-    def __init__(self, name):
-        self.name = name
+# # INHERITED EVOLVED MAN
+
+# class Mordern_Man(Human): # INHERITED CLASS IS PUT IN PARENTHESIS
+
+#     def __init__(self, name):
+#         self.name = name
     
-john = Mordern_Man(name = "John")
-john.describe()
+# john = Mordern_Man(name = "John")
+# john.describe()
 
 
-# INHERITED EVOLVED MAN EVOLVES MORE WITH THE ADDITION OF NAME TO THE DESCRIBE METHOD
+# # INHERITED EVOLVED MAN EVOLVES MORE WITH THE ADDITION OF NAME TO THE DESCRIBE METHOD
 
-class Mordern_Man(Human): # INHERITED CLASS IS PUT IN PARENTHESIS
+# class Mordern_Man(Human): # INHERITED CLASS IS PUT IN PARENTHESIS
     
-    def __init__(self, name):
-        self.name = name
+#     def __init__(self, name):
+#         self.name = name
 
-    # DESCRIBE METHOD IS MORPHED TO ADD NAME ( POLYMORPHISM )
-    def describe(self):
-        print(f""" 
-                    Hello my name is {self.name}.
-                    But I have 
-                    {self.hands} hands,
-                    {self.eyes} eyes,
-                    {self.nose} nose,
-                    {self.fur} fur
-                """)
+#     # DESCRIBE METHOD IS MORPHED TO ADD NAME ( POLYMORPHISM )
+#     def describe(self):
+#         print(f""" 
+#                     Hello my name is {self.name}.
+#                     But I have 
+#                     {self.hands} hands,
+#                     {self.eyes} eyes,
+#                     {self.nose} nose,
+#                     {self.fur} fur
+#                 """)
     
-dele = Mordern_Man(name = "dele")
-dele.describe()
+# dele = Mordern_Man(name = "dele")
+# dele.describe()
 
-mordern_men = ["Kunle",
-                "Saheed",
-                "Mummy"]
+# mordern_men = ["Kunle",
+#                 "Saheed",
+#                 "Mummy"]
 
-for man in mordern_men:
-    person = Mordern_Man(name = man)
-    person.describe()
+# for man in mordern_men:
+#     person = Mordern_Man(name = man)
+#     person.describe()
 
-
-
+# CREATE A CLASS OF DOG WITH ATTRIBUTES BARK AND DESCRIBE
+# INHERIT FROM THE CLASS WITH NEW SUB CLASSES BULLDOG AND TERRIER AND MORPH TO HAVE THE ATTRIBUTE BREED TYPE IN THE DESCRIPTION
 
 
 
@@ -225,7 +225,7 @@ for man in mordern_men:
 ###### SIMPLE DICE GAME WITH 2 PLAYERS #######
 ##############################################
 
-# import random 
+# import random , time
 
 # class Player():
 
@@ -274,6 +274,7 @@ for man in mordern_men:
 #                 print(self.player1, self.player2)
 
 #                 break
+#             time.sleep(1)
 
     
 
@@ -285,7 +286,18 @@ for man in mordern_men:
 # print(new_player)
 # print(new_player2)
 
+# __STR__ METHOD
 
+# class Boy:
+
+#     def __init__(self, name):
+#         self.name = name
+
+#     def __str__(self):
+#         return self.name
+
+# junior = Boy("junior")
+# print((junior))
 
 # class PayRoll():
 
