@@ -41,8 +41,11 @@
 
 
 
-a=10
-b="Mk is a boy and he is "
-c=" years old."
-print(b + str(a) + c)
+a= input("Math score: ")
+d = input("English score: ")
+e = input("French score: ")
+b = "Mk scored the following;"
+c = " and his cummulative is;"
+f = int(a) + int(d) + int(e)
+print(b, a, d, e, c, f)
 
