@@ -24,18 +24,25 @@
 # check_them([2,3,4,5,6], [3,4,5,6,7])
 
 
-def case_counter(string):
-    uppercase = 0
-    lowercase = 0
+# def case_counter(string):
+#     uppercase = 0
+#     lowercase = 0
 
-    for char in string:
-        if char.islower():
-            lowercase += 1
-        elif char.isupper():
-            uppercase += 1
-    print("Lower Case", lowercase, "Upper Case", uppercase)
+#     for char in string:
+#         if char.islower():
+#             lowercase += 1
+#         elif char.isupper():
+#             uppercase += 1
+#     print("Lower Case", lowercase, "Upper Case", uppercase)
 
 
-case_counter("The Quick Brown Fox")
+# case_counter("The Quick Brown Fox")
 
+
+
+
+a=10
+b="Mk is a boy and he is "
+c=" years old."
+print(b + str(a) + c)
 
