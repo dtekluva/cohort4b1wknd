@@ -1,0 +1,30 @@
+
+create database test
+CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY NOT NULL, username CHAR(10), name VARCHAR(70), age INT, nation CHAR)
+SELECT * FROM `users`
+CREATE TABLE notes (noteid INT(3) AUTO_INCREMENT PRIMARY KEY NOT NULL, userid INT(3), body VARCHAR(500), note_date DATE )
+drop table notes
+CREATE TABLE notes (noteid INT(3) AUTO_INCREMENT PRIMARY KEY NOT NULL, userid INT(3), body VARCHAR(500), note_date DATE, FOREIGN KEY (userid) REFERENCES users(id) )
+INSERT INTO users (name, age, nation, username) values ('John', 30, 'Nigeria', 'john1'), ('Ahmed', 29, 'UAE', 'ahmed'), ('Miller', 42, 'USA', 'millman')
+SELECT * FROM `users`
+ALTER TABLE users DROP COLUMN nation
+ALTER TABLE users ADD COLUMN nation VARCHAR(100)
+DELETE FROM users WHERE id BETWEEN 1 AND 3
+SELECT * FROM `users`
+SELECT * FROM `notes`
+SELECT * FROM `users`
+INSERT INTO users (name, age, nation, username) values ('John', 30, 'Nigeria', 'john1'), ('Ahmed', 29, 'UAE', 'ahmed'), ('Miller', 42, 'USA', 'millman')
+SELECT * FROM `notes`
+SELECT * FROM `users`
+SELECT * FROM `notes`
+SELECT * FROM `users`
+INSERT INTO notes (userid, body, note_date) VALUES (6, "i saw the best sunset ever today, it was epic.", "2021-05-20")
+SELECT * FROM `notes`
+SELECT * FROM `test`.`users` WHERE `id` = 6
+SELECT * FROM `notes`
+SELECT * FROM `notes`
+INSERT INTO notes (userid, body, note_date) VALUES (5, "I always thought the moon was close to the earth until i saw the documentary.", "2021-04-20")
+INSERT INTO notes (userid, body, note_date) VALUES (4, "Could you believe that Einstein's relativity theory might soon be proven wrong.?", "2021-05-19")
+SELECT * FROM `notes`
+SELECT * FROM notes JOIN users ON userid = id
+SELECT name, age, body, note_date FROM notes JOIN users ON userid = id
