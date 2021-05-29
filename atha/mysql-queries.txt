@@ -28,3 +28,14 @@ INSERT INTO notes (userid, body, note_date) VALUES (4, "Could you believe that E
 SELECT * FROM `notes`
 SELECT * FROM notes JOIN users ON userid = id
 SELECT name, age, body, note_date FROM notes JOIN users ON userid = id
+
+
+CREATE TABLE statment (
+  						id INT(3) AUTO_INCREMENT PRIMARY KEY NOT NULL, 
+                       	txndate VARCHAR(500), 
+                       	ref VARCHAR(500), 
+                       	credit INT(10), 
+                       	debit INT(10),  
+                       	balance INT(10), 
+                       	remark VARCHAR(500)
+                      )
