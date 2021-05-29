@@ -27,3 +27,5 @@ FUNCTIONS - https://realpython.com/defining-your-own-python-function/
 OOP - https://realpython.com/python3-object-oriented-programming/
 MYSQL-TUT- https://www.w3schools.com/sql/
 Database normalization - https://www.guru99.com/database-normalization.html
+
+HUMDATA - https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases
