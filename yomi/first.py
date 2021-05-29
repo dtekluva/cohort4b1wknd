@@ -82,11 +82,46 @@ f= 10
 # print(y.capitalize())
 nameof= input("Input Student name: ")
 subject= input("Input student's Subject: ")
+g1 = "Grade A"
+g2 = "Grade B"
+g3 = "Grade C"
+g4 = "Ungraded"
 x = int(input("Input student's score to get grade?: "))
-if x>=70:
-    print(f"{nameof} got Grade A in {subject}")
-elif x >=50:
-    print(f"{nameof} got Grade B in {subject}")
-elif x>=30:
-    print(f"{nameof} got Grade C in {subject}")
 
+
+students = {}
+
+def determine_grade(x): # TAKE SCORE AND CREATE CORRESPONDING GRADE USING IF STATEMENT
+
+    grade = False
+
+    if x>=70:
+        print(f"{nameof} got {g1} in {subject}")
+        grade = g1
+    elif x >=50:
+        print(f"{nameof} got {g2} in {subject}")
+        grade = g2
+    elif x>=30:
+        print(f"{nameof} got {g3} in {subject}")
+        grade = g3
+    elif x==0:
+        print(f"{nameof} got {g4} in {subject} because e be mumu ")
+        grade = g4
+
+    return grade
+
+
+check = { # CREATE A SMALLER DICTIONARY FOR SCORE AND GRADE
+    "score":x,
+    "grade":determine_grade(x)
+}
+
+students[nameof] = check # CREATE A KEY IN THE MAIN DICTIONARY WITH THE CORRESPONDING USER'S NAME AS REQUIRED
+print(students)
+
+file = open("file.csv", "a") # OPEN FILE THAT WE WOULD WRITE OUR CALUES INTO
+file.write(f"{nameof},{x},{determine_grade(x)}\n") # WRITE VALUES INTO THE FILE AS COMMA SEPERATED VALUES.
+
+# dict={'name':'Yomi','age':'30','sex':'male'}
+# print (dict['name'])
+# print(dict['sex'])
