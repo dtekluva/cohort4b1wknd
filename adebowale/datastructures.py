@@ -124,3 +124,95 @@
 
     
 values = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+# values = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+
+# remove duplicates from list
+# using set datastructure
+
+# numbers = [1,2,3,4,1,1,1,2,1,3,4,1,5,3,5,6]
+# non_dups = list(set(numbers))
+# print(non_dups)
+
+# # USING A FOR LOOP
+
+# non_dups = []
+
+# for number in numbers:
+#     if number in non_dups:
+#         continue
+#     else:
+#         non_dups.append(number)
+
+# print(non_dups)
+
+# Write a Python function that takes two lists and returns True if they have at least one common member.
+
+# a = [1,2,3,4,5]
+# b = [9,8,7,6,9]
+
+# set_a = set(a) # convert lists to set in order to use intersect functionlity from sets
+# set_b = set(b)
+
+# intersect = set_a.intersection(set_b)
+# print(intersect)
+# print("A and B a have atleast 1 common values: ", bool(intersect))
+
+# Write a Python program to generate and print a list of first and last 5 elements where the values are square of numbers between 1 and 30 (both included)
+
+numbers = range(1, 31)
+squares = map(lambda nums: nums**2, numbers)
+
+square_nums = lambda nums: nums**2
+squares = map(square_nums, numbers)
+
+squares_list = list(squares)
+last5 = squares_list[-5:]
+first5 = squares_list[0:5]
+
+print(first5 + last5)
+
+nameof= input("Input Student name: ")
+subject= input("Input student's Subject: ")
+g1 = "Grade A"
+g2 = "Grade B"
+g3 = "Grade C"
+g4 = "Ungraded"
+x = int(input("Input student's score to get grade?: "))
+
+
+students = {}
+
+def determine_grade(x): # TAKE SCORE AND CREATE CORRESPONDING GRADE USING IF STATEMENT
+
+    grade = False
+
+    if x>=70:
+        print(f"{nameof} got {g1} in {subject}")
+        grade = g1
+    elif x >=50:
+        print(f"{nameof} got {g2} in {subject}")
+        grade = g2
+    elif x>=30:
+        print(f"{nameof} got {g3} in {subject}")
+        grade = g3
+    elif x==0:
+        print(f"{nameof} got {g4} in {subject} because e be mumu ")
+        grade = g4
+
+    return grade
+
+
+check = { # CREATE A SMALLER DICTIONARY FOR SCORE AND GRADE
+    "score":x,
+    "grade":determine_grade(x)
+}
+
+students[nameof] = check # CREATE A KEY IN THE MAIN DICTIONARY WITH THE CORRESPONDING USER'S NAME AS REQUIRED
+print(students)
+
+file = open("file.csv", "a") # OPEN FILE THAT WE WOULD WRITE OUR CALUES INTO
+file.write(f"{nameof},{x},{determine_grade(x)}\n") # WRITE VALUES INTO THE FILE AS COMMA SEPERATED VALUES.
+
+# dict={'name':'Yomi','age':'30','sex':'male'}
+# print (dict['name'])
+# print(dict['sex'])
