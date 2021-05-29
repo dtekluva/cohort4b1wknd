@@ -1,9 +1,9 @@
 # a = ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
 
-# # a = [1, 2, 7, 8]
-# # a[2:2] = [3, 4, 5, 6]
-# # a[2] = [3, 4, 5, 6, 7]
-# # print(a)
+# a = [1, 2, 7, 8]
+# a[2:2] = [3, 4, 5, 6]
+# a[2] = [3, 4, 5, 6, 7]
+# print(a)
 
 # # a[1:5] = []
 # # print(a)
@@ -18,9 +18,9 @@
 # print(a)
 
 
-# a = ['foo', 'bar', 'baz', 'qux', 'quux']
-# a += 'corge'
-# print(a)
+a = ['foo', 'bar', 'baz', 'qux', 'quux']
+a += ['corge']
+print(a)
  
  
 # s = 'foobar'
@@ -32,9 +32,9 @@
 # # # a.append(123)
 # # # print(a)
 
-# # x = a.append(123)
-# # print(x)
-# # print(a)
+a.append(123)
+# print(x)
+print(a)
 
 # a = ['a', 'b']
 
@@ -58,4 +58,4 @@ a = ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
 # del a[4]
 # print(a)
 
-print(a.pop(0))
+# print(a.pop(0))

@@ -7,7 +7,7 @@
 
 # print(helpers.helper1) # use this if imported with first format
 # print(helper1) # use this if imported with second format you actually have access to all variables from namespace
-# x = 50
+x = 50
 
 # def ordinary(): # function creation
 #     x = 30
@@ -17,20 +17,21 @@
 # # print(x)
 # # print(x)
 
-# def ordinary(y): # function creation wtith one parameter y
+# def ordinary(y,z): # function creation wtith one parameter y
 #     x = 30
-#     print(x, y)
+#     print(x, y,z)
 
-# ordinary(23) # function call
-# # print(x)
-# # print(x)
+# ordinary(23,12) # function call
+# print(x)
+# print(x)
 
-# def ordinary(y): # function creation wtith one parameter y
-#     x = 30
-#     print(x * y)
-
-# y = 2
-# ordinary(y+5) # function call
+y = 2
+c = 5
+def ordinary(y, c): # function creation wtith one parameter y
+    x = 30
+    z = 45
+    print(x * z *y + c)
+ordinary(y+5, c*3) # function call
 # print(x)
 # print(x)
 
